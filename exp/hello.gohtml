@@ -1,0 +1,16 @@
+<h1>Hello, My name is {{.Name}} and I have a cute puppy named {{.Dog}}</h1>
+<p>My {{.Dog}} kisses me {{.NumOfKisses}} times a day!</p>
+<ul>
+  <li>My hobbies:</li>
+  {{
+    range.Hobbies
+  }}
+  <li>
+    {{.}}
+  </li>
+  {{else}}
+  <li>No hobbies were found.</li>
+  {{
+    end
+  }}
+</ul>
